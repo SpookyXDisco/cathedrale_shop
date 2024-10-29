@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Chantal Matin" />
+    <link rel="stylesheet" href="../css/cathedrale.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/zte0uym.css" />
+    <script>
+      function toggleHamburgerMenu() {
+        var hamburger_menu_container =
+          document.getElementsByClassName("hamburger-menu")[0];
+        if (
+          hamburger_menu_container.classList.contains("hamburger-menu-appear")
+        ) {
+          hamburger_menu_container.classList.remove("hamburger-menu-appear");
+          hamburger_menu_container.classList.add("hamburger-menu-disappear");
+        } else {
+          hamburger_menu_container.classList.add("hamburger-menu-appear");
+          hamburger_menu_container.classList.remove("hamburger-menu-disappear");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <!-- Header -->
+
+      <!-- Hamburger Icon MOBILE -->
+      <div class="header-wrapper">
+        <div class="header-left">
+          <a class="hamburger-icon"
+            ><img
+              src="../images/Component3.png"
+              style="margin-right: 7px"
+              alt="Nav"
+              onclick="toggleHamburgerMenu()"
+            />
+          </a>
+          <!-- search bar -->
+          <a
+            ><img
+              src="../images/Group 50.png"
+              style="width: 100%"
+              alt="Search"
+            />
+          </a>
+        </div>
+
+        <h1>Cathedrale</h1>
+
+        <!-- heart favorites  -->
+        <div class="header-right">
+          <a href="favorites.html">
+            <img
+              src="../images/Group 51.png"
+              alt="Heart"
+              style="margin-right: 7px"
+            />
+          </a>
+
+          <!-- cart -->
+          <a href="cart.html">
+            <img src="../images/Group 55.png" alt="cart" style="width: 100%"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Nav Mobile  -->
+      <div style="position: relative">
+        <div class="hamburger-menu">
+          <a href="index.html"><span> Home </span></a>
+          <a href="clothes.html"><span> Clothes </span></a>
+        </div>
+      </div>
+
+      <!-- Nav DESKTOP -->
+      <header class="navbar">
+        <a href="index.html"><span> Home </span></a>
+        <a href="clothes.html"><span> Clothes </span></a>
+      </header>
+
+      <!-- Header  -->
+      <div style="padding-top: 1em" class="title">Cart</div>
+
+      <!-- Order Summary MOBILE-->
+      <div class="mobile">
+        <div class="ordersum">Order Summary</div>
+        <div class="container">
+          <div style="width: 50%">
+            <img
+              style="width: 80%"
+              src="../images/Mask Group 65.png"
+              alt="Model in Leather pants"
+            />
+          </div>
+
+          <div class="col1">
+            <div class="container" style="margin: 0px; font-size: 2.3em">
+              Leather Pants
+            </div>
+            <div class="bigger">$45.99</div>
+            <div style="margin: 0px; padding-top: 3em" class="spacebtw">
+              <div class="col2">
+                <div>Art no: 130456003</div>
+                <div>Color: Black</div>
+                <div class="container" style="width: 100%; padding-top: 3em">
+                  <img
+                    style="width: 25%; height: fit-content"
+                    src="../images/Group 51.png"
+                    alt="Favorite"
+                  />
+                  <img
+                    style="margin-left: 1em; width: 40%"
+                    src="../images/Group 198.png"
+                    alt="Quantity"
+                  />
+                </div>
+              </div>
+              <div class="col3">
+                <div>Size: L</div>
+                <div>Total: $45.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Information MOBILE -->
+      <div class="mobile">
+        <div style="padding-top: 5em" class="container spacebtw infopadding">
+          <div class="align-left" style="font-size: 2em">Email</div>
+          <div class="align-right bigger">sarahsmithe@gmail.com</div>
+        </div>
+
+        <div class="container spacebtw infopadding">
+          <div class="align-left" style="font-size: 2em">Ship To</div>
+          <div class="col2 align-right bigger">
+            <div>Sarah Smithe</div>
+            <div>000 Nowhere Road,</div>
+            <div>Somewhere, Earth, J4Z 2V4</div>
+          </div>
+        </div>
+
+        <div class="container spacebtw infopadding">
+          <div class="align-left" style="font-size: 2em">Delivery</div>
+          <div class="col2 align-right bigger">
+            <div>Priority Shipping</div>
+            <div>(3 to 8 business days) $10.95</div>
+          </div>
+        </div>
+
+        <div class="container spacebtw infopadding">
+          <div class="align-left" style="font-size: 2em">Card</div>
+          <div class="col2 align-right">
+            <div class="container bigger">
+              <img
+                style="padding-right: 7px"
+                src="../images/Group 135.png"
+                alt="Mastercard"
+              />
+              ... 7654
+            </div>
+            <div class="bigger">000 Nowhere Road,</div>
+            <div class="bigger">Somewhere, Earth, J4Z 2V4</div>
+          </div>
+        </div>
+
+        <!-- Pay Now MOBILE  -->
+        <div class="pay infopadding">
+          <img src="../images/Component.png" alt="Pay Now" />
+        </div>
+      </div>
+
+      <!-- Order Summary DESKTOP-->
+      <div class="desktop">
+        <div class="container">
+          <div class="column">
+            <div class="ordersum">Order Summary</div>
+            <div class="container">
+              <div style="width: 40%">
+                <img
+                  style="width: 95%"
+                  src="../images/Mask Group 65.png"
+                  alt="Model in Leather pants"
+                />
+              </div>
+
+              <div class="col1">
+                <div class="container" style="margin: 0em; font-size: 1.5em">
+                  Leather Pants
+                </div>
+                <div class="bigger">$45.99</div>
+                <div style="margin: 0px; padding-top: 3em" class="spacebtw">
+                  <div class="col2">
+                    <div>Art no: 130456003</div>
+                    <div>Color: Black</div>
+                    <div
+                      class="container"
+                      style="width: 100%; padding-top: 3em"
+                    >
+                      <img
+                        style="width: 25%"
+                        src="../images/Group 51.png"
+                        alt="Favorite"
+                      />
+                      <img
+                        style="margin-left: 1em"
+                        src="../images/Group 198.png"
+                        alt="Quantity"
+                      />
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <div>Size: L</div>
+                    <div>Total: $45.99</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Information DESKTOP -->
+              <div class="column" style="padding-left:4em">
+                <div
+                  class="container spacebtw infopadding"
+                >
+                  <div class="align-left" style="font-size: 1.5em">Email</div>
+                  <div class="align-right" style="font-size: 1em">
+                    sarahsmithe@gmail.com
+                  </div>
+                </div>
+
+                <div class="container spacebtw infopadding">
+                  <div class="align-left" style="font-size: 1.5em">Ship To</div>
+                  <div class="col2 align-right" style="font-size: 1em">
+                    <div>Sarah Smithe</div>
+                    <div>000 Nowhere Road,</div>
+                    <div>Somewhere, Earth, J4Z 2V4</div>
+                  </div>
+                </div>
+
+                <div class="container spacebtw infopadding">
+                  <div class="align-left" style="font-size: 1.5em">
+                    Delivery
+                  </div>
+                  <div class="col2 align-right" style="font-size: 1em">
+                    <div>Priority Shipping</div>
+                    <div>(3 to 8 business days) $10.95</div>
+                  </div>
+                </div>
+
+                <div class="container spacebtw infopadding">
+                  <div class="align-left" style="font-size: 1.5em">Card</div>
+                  <div class="col2 align-right">
+                    <div class="container" style="font-size: 1em">
+                      <img
+                        style="padding-right: 7px"
+                        src="../images/Group 135.png"
+                        alt="Mastercard"
+                      />
+                      ... 7654
+                    </div>
+                    <div style="font-size: 1em">000 Nowhere Road,</div>
+                    <div style="font-size: 1em">Somewhere, Earth, J4Z 2V4</div>
+                  </div>
+                </div>
+
+                <!-- Pay Now DESK -->
+                <div class="paydesk infopadding">
+                  <img src="../images/Component.png" alt="Pay Now" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer  -->
+      <div style="text-align: center; padding-top: 13em">
+        © Chantal Matin 2023
+      </div>
+    </main>
+  </body>
+</html>

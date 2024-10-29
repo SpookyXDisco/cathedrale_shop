@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Chantal Matin" />
+    <link rel="stylesheet" href="../css/cathedrale.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/zte0uym.css" />
+    <script>
+      function toggleHamburgerMenu() {
+        var hamburger_menu_container = document.getElementsByClassName("hamburger-menu")[0];
+        if (hamburger_menu_container.classList.contains("hamburger-menu-appear")) {
+          hamburger_menu_container.classList.remove("hamburger-menu-appear")
+          hamburger_menu_container.classList.add("hamburger-menu-disappear")
+
+
+        } else {
+          hamburger_menu_container.classList.add("hamburger-menu-appear")
+          hamburger_menu_container.classList.remove("hamburger-menu-disappear")
+         
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <!-- Header -->
+
+      <!-- Hamburger Icon MOBILE -->
+      <div class="header-wrapper">
+        <div class="header-left">
+          <a class="hamburger-icon"
+            ><img
+              src="../images/Component3.png"
+              style="margin-right: 7px"
+              alt="Nav"
+              onclick="toggleHamburgerMenu()"
+            />
+          </a>
+          <!-- search bar -->
+          <a
+            ><img
+              src="../images/Group 50.png"
+              style="width: 100%"
+              alt="Search"
+            />
+          </a>
+        </div>
+
+        <h1>Cathedrale</h1>
+
+        <!-- heart favorites  -->
+        <div class="header-right">
+          <a href="favorites.html">
+            <img
+              src="../images/Group 51.png"
+              alt="Heart"
+              style="margin-right: 7px"
+            />
+          </a>
+
+          <!-- cart -->
+          <a href="cart.html">
+            <img src="../images/Group 55.png" alt="cart" style="width: 100%"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Nav Mobile  -->
+      <div style="position: relative">
+        <div class="hamburger-menu ">
+          <a href="index.html"><span> Home </span></a>
+          <a href="clothes.html"><span> Clothes </span></a>
+        </div>
+      </div>
+      <!-- Nav DESKTOP -->
+      <header class="navbar">
+        <a href="index.html"><span> Home </span></a>
+        <a href="clothes.html"><span> Clothes </span></a>
+      </header>
+
+      <!-- Item MOBILE-->
+      <div class="mobile">
+        <div>
+          <h4 style="padding-top: 1em; font-size: 2em">Leather Pants</h4>
+          <span> $45.99 </span>
+        </div>
+        <div style="padding-top: 1em">
+          <img
+            style="width: 100%"
+            src="../images/Mask Group 9.png"
+            alt="Model in leather pants"
+          />
+        </div>
+        <div style="padding-top: 2.5em">
+          <img
+            style="width: 100%"
+            src="../images/Mask Group 10.png"
+            alt="Model in leather pants"
+          />
+          <div class="bigger" style="padding-top: 2.5em; padding-bottom: 2em">
+            <h4>Long bootcut pants in a coated,</h4>
+            <h4>woven fabric.</h4>
+            <h4>Polyester, Polyethylene.</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sizes Mobile -->
+      <div class="mobile">
+        <div class="size-text" style="padding-bottom: 1em">
+          <span class="title">Sizes</span>
+          <div class="ruler">
+            <img src="../images/Group 74.png" alt="Ruler" />
+            <span style="font-size: 1.2em"> Size Guide </span>
+          </div>
+        </div>
+        <div class="sizes">
+          <img src="../images/Group 67.png" alt="XS" />
+          <img src="../images/Group 68.png" alt="S" />
+          <img src="../images/Group 69.png" alt="M" />
+        </div>
+        <div class="sizes">
+          <img src="../images/Group 70.png" alt="L" />
+          <img src="../images/Group 71.png" alt="XL" />
+          <img src="../images/Group 72.png" alt="XXL" />
+        </div>
+        <div class="add-to-bag">
+          <img src="../images/Group 66.png" alt="Add to Bag" />
+        </div>
+        <div class="heart">
+          <img src="../images/Group 51.png" alt="Add to Favorites" />
+        </div>
+      </div>
+
+      <!-- Pairs Well With MOBILE -->
+      <div class="mobile">
+        <div class="bigger" style="padding-bottom: 1.5em;font-size: 2em;">Pairs well with</div>
+        <div class="pairs">
+          <div class="pair-individual-container">
+            <img src="../images/Mask Group 12.png" alt="Fluffy Pants" />
+            <h4>Fluffy Pants</h4>
+            <span> $68.99 </span>
+          </div>
+          <div class="pair-individual-container">
+            <img src="../images/Mask Group 13.png" alt="Leather Trench" />
+            <h4>Leather Trench</h4>
+            <span> $129.45 </span>
+          </div>
+          <div class="pair-individual-container">
+            <img src="../images/Mask Group 14.png" alt="Corset Top" />
+            <h4>Corset Top</h4>
+            <span> $32.95 </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item Pictures Desktop  -->
+      <div class="desktop" style="padding-top: 1em;">
+        <div class="container">
+        <div class="item">
+          <img src="../images/Mask Group 9.png" alt="Model in leather pants" />
+        </div>
+        <div class="item">
+          <img src="../images/Mask Group 10.png" alt="Model in leather pants" />
+        </div>
+      
+
+      <!-- Item description, Sizes DESKTOP -->
+      <div class="column siz">
+        <div>
+          <h4 style="font-size: 1.5em">Leather Pants</h4>
+          <span> $45.99 </span>
+        </div>
+        <div class="text-size" style="padding-top: 1em; padding-bottom: 0.5em">
+          <h4>Long bootcut pants in a coated,</h4>
+          <h4>woven fabric.</h4>
+          <h4>Polyester, Polyethylene.</h4>
+        </div>
+      
+      <div class="size-text" style="padding-bottom: em">
+        <span style="font-size: 1.3em">Sizes</span>
+        <div class="ruler">
+          <img src="../images/Group 74.png" alt="Ruler" />
+          <span class="text-size"> Size Guide </span>
+        </div>
+      </div>
+      <div class="sizesdesk">
+        <img src="../images/Group 67.png" alt="XS" />
+        <img src="../images/Group 68.png" alt="S" />
+        <img src="../images/Group 69.png" alt="M" />
+      </div>
+      <div class="sizesdesk">
+        <img src="../images/Group 70.png" alt="L" />
+        <img src="../images/Group 71.png" alt="XL" />
+        <img src="../images/Group 72.png" alt="XXL" />
+      </div>
+      <div class="add-to-bag">
+        <img src="../images/Group 66.png" alt="Add to Bag" />
+      </div>
+      <div class="heart" style="padding-bottom: 0.5em;">
+        <img src="../images/Group 51.png" alt="Add to Favorites" />
+      </div>
+
+      <!-- Pairs well with DESKTOP -->
+     
+        <div style="font-size: 1.5em; padding-bottom: 0.5em;">Pairs well with</div>
+        <div class="pairsdesk text-size">
+          <div class="pairdesk-individual-container">
+            <img src="../images/Mask Group 12.png" alt="Fluffy Pants" />
+            <h4>Fluffy Pants</h4>
+            <span> $68.99 </span>
+          </div>
+          <div class="pairdesk-individual-container">
+            <img src="../images/Mask Group 13.png" alt="Leather Trench" />
+            <h4>Leather Trench</h4>
+            <span> $129.45 </span>
+          </div>
+          <div class="pairdesk-individual-container">
+            <img src="../images/Mask Group 14.png" alt="Corset Top" />
+            <h4>Corset Top</h4>
+            <span> $32.95 </span>
+          </div>
+        </div> </div></div></div>
+      </div>
+
+      <!-- Suggestions Desktop  -->
+      <div class="main desktop">
+        <div class="spacebtw">
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 54.png" alt="Double-Breasted Coat" />
+            <h4>Double-Breasted Coat</h4>
+            <span> $134.99 </span>
+          </div>
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 56.png" alt="White Blouse" />
+            <h4>White Blouse</h4>
+            <s> $30.00 </s> <span> $20.00 </span>
+          </div>
+
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 58.png" alt="Leather Trench" />
+            <h4>Leather Trench</h4>
+            <span> $174.99 </span>
+          </div>
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 65.png" alt="Leather Pants" />
+            <h4>Leather Pants</h4>
+            <span> $45.99 </span>
+          </div>
+        </div>
+        <div class="spacebtw">
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 59.png" alt="Power Suit Jacket" />
+            <h4>Power Suit Jacket</h4>
+            <span> $85.99 </span>
+          </div>
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 57.png" alt="Romantic Corset" />
+            <h4>Romantic Corset</h4>
+            <span> $37.99 </span>
+          </div>
+
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 66.png" alt="Motorcycle Jacket" />
+            <h4>Motorcycle Jacket</h4>
+            <span> $209.99 </span>
+          </div>
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 67.png" alt="Unisex Sweater" />
+            <h4>Unisex Sweater</h4>
+            <span> $39.99 </span>
+          </div>
+        </div>
+        <div class="spacebtw">
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 33.png" alt="Stud Jacket" />
+            <h4>Stud Jacket</h4>
+            <span> $74.99 </span>
+          </div>
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 68.png" alt="Leather Trench" />
+            <h4>Leather Trench</h4>
+            <span> $143.99 </span>
+          </div>
+
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 64.png" alt="Vintage Corset" />
+            <h4>Vintage Corset</h4>
+            <span> $54.99 </span>
+          </div>
+          <div class="main-content-wrapper-desk">
+            <img src="../images/Mask Group 30.png" alt="Mod Sweater" />
+            <h4>Mod Sweater</h4>
+            <span> $47.99 </span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer  -->
+      <div style="text-align: center; padding-top: 6em">
+        © Chantal Matin 2023
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Chantal Matin" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../css/cathedrale.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/zte0uym.css" />
+
+    <script>
+      function toggleHamburgerMenu() {
+        var hamburger_menu_container =
+          document.getElementsByClassName("hamburger-menu")[0];
+        if (
+          hamburger_menu_container.classList.contains("hamburger-menu-appear")
+        ) {
+          hamburger_menu_container.classList.remove("hamburger-menu-appear");
+          hamburger_menu_container.classList.add("hamburger-menu-disappear");
+        } else {
+          hamburger_menu_container.classList.add("hamburger-menu-appear");
+          hamburger_menu_container.classList.remove("hamburger-menu-disappear");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <!-- Header -->
+
+      <!-- Hamburger Icon MOBILE -->
+      <div class="header-wrapper">
+        <div class="header-left">
+          <a class="hamburger-icon"
+            ><img
+              src="../images/Component3.png"
+              style="margin-right: 7px"
+              alt="Nav"
+              onclick="toggleHamburgerMenu()"
+            />
+          </a>
+          <!-- search bar -->
+          <a
+            ><img
+              src="../images/Group 50.png"
+              style="width: 100%"
+              alt="Search"
+            />
+          </a>
+        </div>
+
+        <h1>Cathedrale</h1>
+
+        <!-- heart favorites  -->
+        <div class="header-right">
+          <a href="favorites.html">
+            <img
+              src="../images/Group 51.png"
+              alt="Heart"
+              style="margin-right: 7px"
+            />
+          </a>
+
+          <!-- cart -->
+          <a href="cart.html">
+            <img src="../images/Group 55.png" alt="cart" style="width: 100%"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Nav Mobile  -->
+      <div style="position: relative">
+        <div class="hamburger-menu">
+          <a href="index.html"><span> Home </span></a>
+          <a href="clothes.html"><span> Clothes </span></a>
+        </div>
+      </div>
+
+      <!-- Nav DESKTOP -->
+      <header class="navbar">
+        <a href="index.html"><span> Home </span></a>
+        <a href="clothes.html"><span> Clothes </span></a>
+      </header>
+
+      <!-- Hero -->
+      <div class="hero mobile">
+        <img
+          src="../images/Mask Group 3.png"
+          alt="Model in front of cathedrale"
+        />
+      </div>
+
+      <div class="hero desktop">
+        <img
+          src="../images/Mask Group 2.png"
+          alt="Model in front of cathedrale"
+        />
+      </div>
+
+      <!-- Fall Arrivals MOBILE -->
+      <div class="fall-arrivals mobileflex">
+        <img
+          src="../images/Mask Group 4.png"
+          alt="Model with hair in face"
+          class="index-side-image-left"
+        />
+        <img
+          style="width: 18%"
+          src="../images/Fall Arrivals.png"
+          alt="Fall Arrivals"
+        />
+      </div>
+
+      <!-- Summer Breeze MOBILE -->
+      <div class="summer-breeze mobileflex">
+        <img
+          style="width: 20%"
+          src="../images/Group 199.png"
+          alt="Summer Breeze! Up to 50% off"
+        />
+        <img
+          src="../images/Mask Group 5.png"
+          alt="Model with arms in the air, like she just don't care"
+          class="index-side-image-right"
+        />
+      </div>
+
+      <!-- Fall Arrivals + Summer Breeze DESKTOP -->
+      <div class="fall-summer-container">
+        <div class="header-wrapper">
+          <div class="fall desktop">Fall Arrivals</div>
+          <div class="desktop">
+            <img
+              class="mobimg"
+              src="../images/Mask Group 4.png"
+              alt="Model with hair in face"
+            />
+          </div>
+        </div>
+        <div class="header-wrapper">
+          <div class="fall desktop invisible">Fall Arrivals</div>
+
+          <div class="desktop">
+            <img
+              class="mobimg"
+              src="../images/Mask Group 5.png"
+              alt="Model with arms in the air, like she just don't care"
+            />
+          </div>
+          <div class="fall desktop">Summer Breeze</div>
+
+        </div>
+      </div>
+
+      <!-- Footer  -->
+      <div style="text-align: center; padding-top: 6em">
+        © Chantal Matin 2023
+      </div>
+    </main>
+  </body>
+</html>

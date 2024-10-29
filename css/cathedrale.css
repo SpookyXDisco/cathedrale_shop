@@ -1,0 +1,373 @@
+/* Main */
+main {
+        background-color: #1D1D1D; min-height: 100vh;
+        padding: 3em; padding-left: 2em; padding-right: 2em;
+        font-size:10px
+}
+
+* {
+    margin: 0;
+    font-family: "owners-xwide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #55EEFF;
+}
+
+.bigger {
+    font-size: 1.5em;
+  }
+
+.title {
+    display: flex; flex-direction: row; justify-content: center; font-size: 2.7em;
+}
+
+.container {  
+    display: flex; flex-direction: row; 
+}
+
+.spacebtw {
+    display: flex; flex-direction: row; justify-content: space-between; 
+}
+
+.column {
+    display: flex; flex-direction: column;
+}
+
+/* Nav */
+.header-wrapper{
+    display: flex; flex-direction: row; justify-content: space-between;
+}
+.header-left{
+    display: flex; flex-direction: row; 
+}
+
+.header-right {
+    display: flex; flex-direction: row;
+}
+
+header {
+    display: flex; justify-content: space-around; 
+}
+header span {
+    color: #57FF6D; 
+}
+
+header a {
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "joschmi", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #A38FF6;
+    font-size: 3.7em;
+    font-kerning: normal;
+}
+
+h4:hover {
+    color:#A38FF6
+}
+
+.hamburger-menu span:hover {
+    color:#A38FF6
+}
+
+.navbar span:hover {
+    color:#A38FF6
+}
+/* hamburger menu animations */
+@keyframes appear {
+    0%   {opacity: 0;transform:translateX(-100%)}
+ 
+    100% {opacity:1;transform:translateX(0)}
+  }
+
+  @keyframes disappear {
+    
+    0% {opacity:1;transform:translateX(0)}
+    100% {opacity:0;transform:translateX(-100%)}
+  }
+
+  .hamburger-menu-appear{
+    animation-name:appear; animation-direction: alternate;animation-duration:1s; animation-fill-mode: both;
+}
+.hamburger-menu-disappear{
+    animation-name:disappear; animation-direction: alternate;animation-duration:1s; animation-fill-mode: both;
+}
+
+.hamburger-menu{
+    position: absolute; top: 0; flex-direction: column; display: flex; background-color: #1D1D1D; padding: 2em; padding-left: 0em; z-index: 2; opacity: 0;
+}
+
+.hamburger-menu a{
+    text-decoration: none; margin-bottom: 1em;
+}
+
+.hamburger-menu span{
+    color: #57FF6D;
+}
+
+/* Hero */
+.hero {
+    margin-top: 50px; position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+/* Index  */
+.fall-arrivals {
+    padding-top: 50px; display: flex; flex-direction: row;
+}
+
+.index-side-image-left{
+     display: flex; flex-direction: row; width: 75%; height: 75%;
+}
+.summer-breeze {
+    padding-top: 50px; display: flex; flex-direction: row;
+}
+.index-side-image-right{
+    padding-top: 50px; width: 75%; height: 100%;
+}
+.fall {
+    font-family: "joschmi", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #55EEFF; font-size: 2em; 
+}
+
+.fall-summer-container{
+    display: flex;
+    padding-top: 2em;
+    justify-content: space-around;
+}
+
+.fall-summer-container .header-wrapper{
+    width:20%;
+    flex-direction: column;justify-content: flex-start;
+}
+
+/* add fall arrivals again as an invisible placeholder to get the alignment right */
+.invisible{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mobimg {
+    height: 100%;
+    width: 100%;
+}
+/* Clothing  */
+.main {
+    display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;
+}
+.main-content-wrapper {
+    width: 45%;
+}
+.main-content-wrapper-desk {
+    width: 20%;
+}
+.main img {
+    padding-top: 20px; width: 100%;
+}
+.main h4 {
+    padding-top: 10px; 
+}
+.main span{
+    padding-top: 0px;
+}
+
+/* Item */
+.size-text {
+    display: flex; flex-direction: row; justify-content: space-between; 
+ }
+ .sizes {
+    display: flex; flex-direction: row; justify-content: space-between; 
+ }
+ .sizes img {
+    width: 30%; padding-bottom: 1em;
+ }
+
+ .ruler img {
+    width: 10%;
+ }
+ .ruler {
+    display: flex; align-items: flex-end; width: 50%; justify-content: flex-end;
+ }
+.add-to-bag {
+    display: flex; align-items: center;
+}
+ .add-to-bag img {
+    width: 100%; padding-bottom: 1em; 
+ }
+ .heart {
+    display: flex; flex-direction: row; justify-content: center; 
+ }
+ .heart img{
+    width: 10%; 
+ }
+ .pairs {
+    display: flex; flex-direction: row; justify-content: space-between; 
+ }
+
+ .pair-individual-container{
+    width:25%;font-size: 2em;
+ }
+
+ .pairs img{
+    width:100%;
+ }
+
+ .item {
+    width: 30%; justify-content: space-between;
+ }
+
+ .item img {
+    width: 100%;
+ }
+
+ .siz {
+    width: 33%; padding-left: 2em;
+ }
+
+ .text-size {
+    font-size: 1em;
+ }
+
+ .sizesdesk {
+    display: flex; flex-direction: row; justify-content: space-between; 
+ }
+ .sizesdesk img {
+    width: 30%; padding-bottom: 0.5em;
+ }
+ .pairsdesk {
+    display: flex; flex-direction: row; justify-content: space-between; width: 100%;
+ }
+ .pairdesk-individual-container{
+    width:25%;
+ }
+ .pairsdesk img{
+    width:100%
+ }
+
+.sizes img:hover {
+    width: 33%;
+}
+
+.sizesdesk img:hover {
+    width: 33%;
+}
+
+.add-to-bag img:hover {
+    width: 97%; margin: auto;
+} 
+.heart img:hover {
+    width: 12%;
+}
+
+/* Favorites */
+
+/* Cart  */
+
+.ordersum {
+    font-size: 1.7em; padding-top: 2em; padding-bottom: 1em;
+}
+.col1 {  
+    display: flex; flex-direction: column; padding-left: 0.3em; width: 50%;
+    padding-right: 2em;
+}
+
+.col2 {  
+    display: flex; flex-direction: column; margin: 0px;
+} 
+
+.col3 {  
+    display: flex; flex-direction: column; padding-left: 0.3em; 
+}
+
+.pay {
+    display: flex; flex-direction: row; justify-content: center; 
+}
+.pay img{
+    height: 4em;
+}
+
+.align-left{
+    width: 25%
+}
+
+.align-right{
+ width: 60%
+}
+
+.infopadding {
+ padding-bottom: 2em;
+}
+
+.paydesk {
+    display: flex; flex-direction: row; justify-content: center; 
+}
+.paydesk img{
+    height: 3em;
+}
+
+ /* Mobile */
+ @media screen and (max-width: 900px) {
+    .hamburger-icon { 
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+    .mobileflex {
+        display: flex;
+    }
+   
+ }
+
+ /* Desktop */
+ @media screen and (min-width: 901px) {
+
+    main{
+        font-size:16px;
+    }
+   
+    .hamburger-icon { 
+        display: none;
+    }
+    .navbar {
+        display: flex; justify-content: space-around;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .mobileflex {
+        display: none;
+    }
+
+    .col1{
+        width:auto;
+    }
+    .col3{
+        margin-left: 2em;
+    }
+    
+ }
+
+ /* Brought to you by name pollution (sorry) */
